@@ -31,7 +31,7 @@ if [ $(grep -o 'ERROR' $LOGFILE | wc -l) -gt 0 ]
 fi
 
 #adding exceptions to output file
-if [ $(grep -o 'EXCEPTION' $LOGFILE | wc -l) -gt 0 ]
+if [ $(grep -o 'Exception' $LOGFILE | wc -l) -gt 0 ]
    then
 	echo "------- EXCEPTIONS ($(grep -o 'Exception' $LOGFILE | wc -l)) -------" >> $OUTPUT
 	echo "$EXCEPTIONS" >> $OUTPUT
